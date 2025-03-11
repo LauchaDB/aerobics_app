@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/aerobic-app/static/css/main.0c0bec78.css",
+    "main.js": "/aerobic-app/static/js/main.6e11f6d2.js",
+    "static/js/453.f426cd92.chunk.js": "/aerobic-app/static/js/453.f426cd92.chunk.js",
+    "index.html": "/aerobic-app/index.html",
+    "main.0c0bec78.css.map": "/aerobic-app/static/css/main.0c0bec78.css.map",
+    "main.6e11f6d2.js.map": "/aerobic-app/static/js/main.6e11f6d2.js.map",
+    "453.f426cd92.chunk.js.map": "/aerobic-app/static/js/453.f426cd92.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c0bec78.css",
+    "static/js/main.6e11f6d2.js"
+  ]
+}
