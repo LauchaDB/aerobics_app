@@ -14,8 +14,8 @@ function Timer() {
     const finishRef = useRef(null);
 
     useEffect(() => {
-        beepRef.current = new Audio("/beep.wav");
-        finishRef.current = new Audio("/finish.wav");
+        beepRef.current = new Audio(`${process.env.PUBLIC_URL}/beep.wav`);
+        finishRef.current = new Audio(`${process.env.PUBLIC_URL}/finish.wav`);
         beepRef.current.load();
         finishRef.current.load();
     }, []);
