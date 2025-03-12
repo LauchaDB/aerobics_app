@@ -148,11 +148,36 @@ function CustomTraining() {
                 ← Volver al Inicio
             </button>
             {showModal && (
-                <div className="modal">
-                    <div className="modal-content">
+                <div className="modal" style={{
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    background: 'rgba(0, 0, 0, 0.8)',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                }}>
+                    <div className="modal-content" style={{
+                        background: 'white',
+                        padding: '20px',
+                        borderRadius: '10px',
+                        textAlign: 'center'
+                    }}>
                         <h2>Permitir Sonido</h2>
                         <p>Debes tocar el botón para habilitar el sonido.</p>
-                        <button onClick={enableAudioCustomTraining}>Habilitar Sonido</button>
+                        <button 
+                            onClick={enableAudioCustomTraining}
+                            style={{
+                                padding: '10px 20px',
+                                marginTop: '10px',
+                                fontSize: '16px',
+                                cursor: 'pointer'
+                            }}
+                        >
+                            Habilitar Sonido
+                        </button>
                     </div>
                 </div>
             )}
