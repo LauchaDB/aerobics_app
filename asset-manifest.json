@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/aerobics_app/static/css/main.348976b5.css",
-    "main.js": "/aerobics_app/static/js/main.00634011.js",
+    "main.js": "/aerobics_app/static/js/main.6115d883.js",
     "static/js/453.f426cd92.chunk.js": "/aerobics_app/static/js/453.f426cd92.chunk.js",
     "index.html": "/aerobics_app/index.html",
     "main.348976b5.css.map": "/aerobics_app/static/css/main.348976b5.css.map",
-    "main.00634011.js.map": "/aerobics_app/static/js/main.00634011.js.map",
+    "main.6115d883.js.map": "/aerobics_app/static/js/main.6115d883.js.map",
     "453.f426cd92.chunk.js.map": "/aerobics_app/static/js/453.f426cd92.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.348976b5.css",
-    "static/js/main.00634011.js"
+    "static/js/main.6115d883.js"
   ]
 }
