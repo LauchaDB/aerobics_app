@@ -11,7 +11,9 @@ function App() {
         <Router>
             <div className="container">
                 <Routes>
-                    <Route path="" element={<Landing />} />
+                    <Route path="/aerobics-app" element={<Landing />} />
+                    <Route path="/" element={<Landing />} />
+                    <Route path="/aerobics-app/intermitentes" element={<Landing />} />
                     <Route path="/intermitentes" element={
                         <div>
                             <Menu />
