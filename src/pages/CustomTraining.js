@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import {useNavigate} from "react-router-dom";
 
 function CustomTraining() {
     const [workouts, setWorkouts] = useState([]);
@@ -11,6 +12,7 @@ function CustomTraining() {
     const beepRef = useRef(null);
     const finishRef = useRef(null);
     const [showModal, setShowModal] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
         beepRef.current = new Audio(`${process.env.PUBLIC_URL}/beep.mp3`);
@@ -128,6 +130,23 @@ function CustomTraining() {
 
     return (
         <div className="custom-training">
+            <button
+                onClick={() => navigate('/')}
+                className="back-button"
+                style={{
+                    padding: '10px 20px',
+                    backgroundColor: 'rgba(95, 95, 95, 0.2)',
+                    border: '1px solid rgba(255, 255, 255, 0.3)',
+                    borderRadius: '8px',
+                    color: 'black',
+                    cursor: 'pointer',
+                    transition: 'all 0.3s ease',
+                    backdropFilter: 'blur(10px)',
+                    fontSize: '1rem'
+                }}
+            >
+                ← Volver al Inicio
+            </button>
             {showModal && (
                 <div className="modal">
                     <div className="modal-content">
@@ -140,9 +159,9 @@ function CustomTraining() {
             <h2>Entrenamiento Personalizado</h2>
 
             <div className="workout-form">
-                <input type="text" id="workoutName" placeholder="Nombre del ejercicio" disabled={running} />
-                <input type="number" id="minutes" placeholder="Min" min="0" disabled={running} />
-                <input type="number" id="seconds" placeholder="Seg" min="0" disabled={running} />
+                <input type="text" id="workoutName" placeholder="Nombre del ejercicio" disabled={running}/>
+                <input type="number" id="minutes" placeholder="Min" min="0" disabled={running}/>
+                <input type="number" id="seconds" placeholder="Seg" min="0" disabled={running}/>
                 <button
                     onClick={() => {
                         const name = document.getElementById("workoutName").value;
@@ -153,7 +172,7 @@ function CustomTraining() {
                         document.getElementById("minutes").value = '';
                         document.getElementById("seconds").value = '';
                     }}
-                    style={{ visibility: running ? "hidden" : "visible" }}
+                    style={{visibility: running ? "hidden" : "visible"}}
                 >
                     Agregar
                 </button>
@@ -172,7 +191,7 @@ function CustomTraining() {
             )}
 
             {finished && (
-                <button onClick={resetTraining} style={{ marginTop: "10px", backgroundColor: "red", color: "white" }}>
+                <button onClick={resetTraining} style={{marginTop: "10px", backgroundColor: "red", color: "white"}}>
                     Limpiar Todo
                 </button>
             )}
