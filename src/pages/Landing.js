@@ -96,7 +96,7 @@ function Landing() {
                         padding: 0 1rem;
                     }
                     .landing-option {
-                        width: 100%;
+                        width: 70%;
                         max-width: 320px;
                     }
                     h1 {
